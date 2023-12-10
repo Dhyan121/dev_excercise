@@ -1,0 +1,139 @@
+.cardForListing {
+  background-color: white;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem 4rem;
+  border: 0.573px solid #bce;
+  background: #fff;
+}
+
+.col1 {
+  flex: 3;
+  color: #000;
+  font-size: 1.8rem;
+  font-weight: 400;
+}
+
+.col2 {
+  flex: 1;
+}
+
+.col2 > span {
+  border-radius: 0.2239rem;
+  border: 0.711px solid #ddd;
+  background: rgba(233, 233, 233, 0.5);
+  padding: 0 0.5rem;
+  color: #000;
+  font-size: 1.4rem;
+  font-weight: 700;
+}
+
+.col3 {
+  flex: 1;
+  margin-right: 1rem;
+}
+
+.col3 > span {
+  align-items: center;
+  justify-content: center;
+  border-radius: 0.3rem;
+  padding: 1rem 0.2rem;
+  font-size: 1.4rem;
+  font-weight: 600;
+  background-color: #eff4ff;
+  color: #2f57a4;
+  white-space: nowrap;
+}
+
+.col4 {
+  flex: 1;
+}
+
+.col4 > span {
+  font-size: 1.4rem;
+  font-weight: 700;
+  background-color: #2f57a4;
+  color: #fff;
+  padding: 0.5rem 1rem;
+}
+
+/* Responsive styles for tablets */
+@media only screen and (max-width: 768px) {
+  .cardForListing {
+    justify-content: space-between;
+    gap: 0.5rem;
+    padding: 2rem 1rem;
+    width: calc(50% - 1rem);
+    flex-direction: column;
+    align-items: center;
+    min-height: auto;
+    position: relative;
+  }
+
+  .col1 {
+    flex: none; /* Reset flex property */
+    width: 100%;
+    margin-bottom: 1rem;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .col2,
+  .col3,
+  .col4 {
+    flex: none; /* Reset flex property */
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+
+  .col2 > span,
+  .col3 > span,
+  .col4 > span {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .navigate {
+    padding: 1rem 2.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #2f57a4;
+    border-radius: 0.5rem;
+    font-size: 1.6rem;
+    font-weight: 500;
+    color: #2f57a4;
+    background-color: transparent;
+    width: 100%;
+  }
+
+  .col3 {
+    margin-right: 0;
+  }
+}
+
+/* Responsive styles for mobile */
+@media only screen and (max-width: 480px) {
+  .cardForListing {
+    padding: 2rem 0.5rem;
+    width: 100%;
+  }
+
+  .col2 > span {
+    font-size: 1.2rem;
+  }
+
+  .col3 > span {
+    font-size: 1.2rem;
+  }
+
+  .col4 > span {
+    font-size: 1.2rem;
+  }
+}

@@ -1,0 +1,188 @@
+.card {
+  background-color: white;
+  width: 90%;
+  min-height: 15vh;
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem 2rem;
+  fill: #fff;
+  stroke-width: 0.573px;
+  stroke: #a1b6df;
+  filter: drop-shadow(0px 4px 8px rgba(0, 0, 0, 0.09))
+    drop-shadow(0px 0px 4px rgba(0, 0, 0, 0.04));
+}
+
+.cardLeftGroup {
+  display: flex;
+  flex: 8;
+  flex-direction: column;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.timeLocationDetails {
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+}
+
+.locationText {
+  font-size: 1.4rem;
+  font-weight: 700;
+  background-color: #2f57a4;
+  color: #fff;
+  padding: 0.5rem 1rem;
+}
+
+.dateText {
+  font-size: 1.8rem;
+  font-weight: 600;
+  color: #60759f;
+}
+
+.timeText {
+  color: #2f57a4;
+  font-size: 1.4rem;
+  font-weight: 700;
+}
+
+.title {
+  font-size: 2.5rem;
+  color: black;
+  font-weight: 500;
+}
+
+.description {
+  color: #6c6c6c;
+  font-size: 1.8rem;
+  font-weight: 500;
+}
+
+.cardRightGroup {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex: 2;
+  flex-direction: column;
+  gap: 2rem;
+  padding: 2rem 0;
+}
+
+.borderLeft {
+  border-left: 1px solid #9ab8f1;
+  padding-left: 1.5rem;
+  margin-left: 3.5rem;
+  height: 100%;
+  align-self: center;
+}
+
+.registerButton {
+  padding: 1rem 2.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #2f57a4;
+  border-radius: 0.5rem;
+  font-size: 1.6rem;
+  font-weight: 500;
+  color: #2f57a4;
+  background-color: transparent;
+}
+
+.registerButton:hover {
+  box-shadow: 0 0 10px #96b7f4;
+}
+
+.extraDetails {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 0.3rem;
+  padding: 1rem 0.2rem;
+  font-size: 1.4rem;
+  font-weight: 600;
+  background-color: #eff4ff;
+  color: #2f57a4;
+}
+
+/* Responsive styles for tablets */
+@media only screen and (max-width: 768px) {
+  .card {
+    flex-direction: column;
+    align-items: center;
+    min-height: auto;
+  }
+
+  .cardLeftGroup,
+  .cardRightGroup {
+    width: 100%;
+    text-align: center;
+    /* margin-bottom: 1rem; */
+  }
+
+  .timeLocationDetails {
+    width: 100%;
+    justify-content: center;
+    padding: 1.5rem 0 0 0;
+  }
+
+  .extraDetails {
+    padding: 1rem 0;
+    width: 100%;
+  }
+
+  .borderLeft {
+    border-left: none;
+    border-top: 1px solid #9ab8f1;
+    padding-left: 0;
+    margin-left: 0;
+    padding-top: 1.5rem;
+    margin-top: 1.5rem;
+    height: auto;
+  }
+
+  .registerButton {
+    width: 100%;
+  }
+}
+
+/* Responsive styles for mobile */
+@media only screen and (max-width: 480px) {
+  .card {
+    min-height: auto;
+  }
+
+  .timeLocationDetails {
+    align-items: center;
+  }
+
+  .locationText {
+    font-size: 1.2rem;
+    font-weight: 700;
+    padding: 0.3rem 0.6rem;
+  }
+
+  .dateText {
+    font-size: 1.6rem;
+    font-weight: 600;
+  }
+
+  .timeText {
+    font-size: 1.2rem;
+    font-weight: 700;
+  }
+
+  .locationText,
+  .dateText,
+  .timeText {
+    margin-top: 0.5rem;
+  }
+
+  .title {
+    font-size: 2rem;
+  }
+
+  .description {
+    font-size: 1.6rem;
+  }
+}
